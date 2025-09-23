@@ -14,7 +14,8 @@
       "Bash(npm install)",
       "Bash(npm run build:*)",
       "Bash(git pull:*)",
-      "WebFetch(domain:mcguirelaw.vercel.app)"
+      "WebFetch(domain:mcguirelaw.vercel.app)",
+      "WebFetch(domain:help.proprofschat.com)"
     ],
     "deny": [],
     "ask": []
