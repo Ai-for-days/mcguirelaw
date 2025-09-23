@@ -1,0 +1,309 @@
+---
+// Alternative page for McGuire Law
+---
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>South Carolina Criminal Defense & Personal Injury Attorney | McGuire Law Since 1993</title>
+    <meta name="description" content="Experienced South Carolina criminal defense & personal injury attorney. 30+ years defending DUI, drug charges, car accidents, medical malpractice. Free consultation. Call (888) 499-5738." />
+    <meta name="keywords" content="South Carolina criminal defense attorney, personal injury lawyer SC, DUI attorney Columbia, drug charges defense, car accident lawyer, medical malpractice attorney, wrongful death lawyer, Columbia SC attorney, Charleston lawyer, Greenville attorney" />
+    <meta property="og:title" content="South Carolina Criminal Defense & Personal Injury Attorney | McGuire Law" />
+    <meta property="og:description" content="Experienced South Carolina criminal defense & personal injury attorney. 30+ years defending DUI, drug charges, car accidents, medical malpractice. Free consultation available." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mcguirelaw.vercel.app/index2" />
+    <link rel="canonical" href="https://mcguirelaw.vercel.app/index2" />
+
+	<style>
+		:root {
+			--primary-red: #B31942;
+			--primary-white: #FFFFFF;
+			--primary-blue: #0A3161;
+			--light-gray: #f1f1f1;
+			--black: #000000;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: 'Georgia', serif;
+			line-height: 1.6;
+			color: var(--primary-blue);
+			background-color: var(--primary-white);
+		}
+
+		.sticky-header {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background-color: var(--primary-blue);
+			color: var(--primary-white);
+			text-align: center;
+			padding: 10px;
+			z-index: 1000;
+			font-size: 0.9em;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+
+		.hero {
+			background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue) 100%);
+			color: var(--primary-white);
+			padding: 100px 0 60px;
+			text-align: center;
+			position: relative;
+			overflow: hidden;
+		}
+
+		.hero-content {
+			position: relative;
+			z-index: 2;
+		}
+
+		.hero h1 {
+			font-size: 3.2em;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+
+		.hero .subheadline {
+			font-size: 1.4em;
+			margin-bottom: 30px;
+			font-weight: 300;
+		}
+
+		.cta-section {
+			background: var(--primary-white);
+			padding: 40px;
+			border-radius: 15px;
+			box-shadow: 0 10px 40px rgba(10, 49, 97, 0.15);
+			margin: 30px auto 0;
+			max-width: 600px;
+		}
+
+		.cta-buttons {
+			display: flex;
+			gap: 20px;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		.btn-primary {
+			background: var(--primary-red);
+			color: var(--primary-white);
+			padding: 18px 35px;
+			border-radius: 8px;
+			text-decoration: none;
+			font-weight: bold;
+			font-size: 1.3em;
+			transition: all 0.3s ease;
+			border: none;
+			cursor: pointer;
+		}
+
+		.testimonials {
+			background: var(--light-gray);
+			padding: 60px 0;
+		}
+
+		.testimonial-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 30px;
+		}
+
+		.testimonial {
+			background: var(--primary-white);
+			padding: 30px;
+			border-radius: 10px;
+			box-shadow: 0 5px 20px rgba(10, 49, 97, 0.1);
+		}
+
+		.contact-form {
+			background: var(--light-gray);
+			padding: 60px 0;
+		}
+
+		.contact-form form {
+			max-width: 600px;
+			margin: 0 auto;
+			background: var(--primary-white);
+			padding: 40px;
+			border-radius: 15px;
+			box-shadow: 0 10px 40px rgba(10, 49, 97, 0.15);
+		}
+
+		.form-group {
+			margin-bottom: 20px;
+		}
+
+		.form-group label {
+			display: block;
+			margin-bottom: 10px;
+			color: var(--primary-blue);
+		}
+
+		.form-group input {
+			width: 100%;
+			padding: 15px;
+			border: 1px solid var(--primary-blue);
+			border-radius: 8px;
+		}
+
+		.form-submit {
+			background: var(--primary-red);
+			color: var(--primary-white);
+			border: none;
+			padding: 15px 30px;
+			border-radius: 8px;
+			cursor: pointer;
+			font-weight: bold;
+		}
+
+		.locations {
+			background: var(--primary-blue);
+			color: var(--primary-white);
+			padding: 60px 0;
+			text-align: center;
+		}
+
+		.location-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			gap: 30px;
+			margin-top: 40px;
+		}
+
+		@media (max-width: 768px) {
+			.hero h1 {
+				font-size: 2.2em;
+			}
+
+			.cta-buttons {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="sticky-header">
+		Legal Help Available 24/7/365 - Call (888) 499-5738 - McGuire Law - Since 1993
+	</div>
+
+	<div class="hero">
+		<div class="container">
+			<div class="hero-content">
+				<h1>South Carolina Criminal Defense, Personal Injury & Family Law</h1>
+				<p class="subheadline">Experienced Legal Representation by Matthew McGuire, Esq. - Over 30 Years of Fighting for South Carolinians</p>
+
+				<div class="cta-section">
+					<div class="cta-buttons">
+						<a href="tel:8884995738" class="btn-primary">Call (888) 499-5738</a>
+						<a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0HxYWpoHy_5xI7B7hKF6hXy7tj5n_HdPLnq82ouxkN0VYp0RPZ2lbYqc7B6bwMGz51LLXNNuY-" class="btn-primary">Book a Call</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="testimonials">
+		<div class="container">
+			<h2 style="text-align: center; margin-bottom: 40px;">What Our Clients Say</h2>
+			<div class="testimonial-grid">
+				<div class="testimonial">
+					<p>"Mr. McGuire's knowledge and dedication saved my career when I faced serious drug charges. I'm forever grateful."</p>
+					<p style="margin-top: 15px; font-weight: bold;">- Tyler J., Columbia, SC</p>
+				</div>
+				<div class="testimonial">
+					<p>"Outstanding legal representation in my personal injury case. Matt fought tirelessly to get me the compensation I deserved."</p>
+					<p style="margin-top: 15px; font-weight: bold;">- Rebecca M., Arcadia Lakes, SC</p>
+				</div>
+				<div class="testimonial">
+					<p>"When our family needed legal help during a difficult divorce, Mr. McGuire provided compassionate and strategic guidance."</p>
+					<p style="margin-top: 15px; font-weight: bold;">- Jennifer K., Aiken, SC</p>
+				</div>
+				<div class="testimonial">
+					<p>"McGuire Law exposed the truth in my assault case and got the charges significantly reduced. Highly professional."</p>
+					<p style="margin-top: 15px; font-weight: bold;">- Anthony S., Rock Hill, SC</p>
+				</div>
+				<div class="testimonial">
+					<p>"Matt's expertise in criminal defense was crucial when I was wrongly accused. He protected my future."</p>
+					<p style="margin-top: 15px; font-weight: bold;">- Michael P., Greenville, SC</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="locations">
+		<div class="container">
+			<h2>McGuire Law Office Locations</h2>
+			<div class="location-grid">
+				<div>
+					<h3>Columbia Office</h3>
+					<p>2001 Assembly Street<br/>Suite 102-B<br/>Columbia, SC 29201</p>
+				</div>
+				<div>
+					<h3>Charleston Office</h3>
+					<p>460 King Street<br/>Suite 200<br/>Charleston, SC 29403</p>
+				</div>
+				<div>
+					<h3>Myrtle Beach Office</h3>
+					<p>6514 Dick Pond Road<br/>Myrtle Beach, SC 29588</p>
+				</div>
+				<div>
+					<h3>Spartanburg Office</h3>
+					<p>518 East Main Street<br/>Spartanburg, SC 29302</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="contact-form">
+		<div class="container">
+			<form action="https://formspree.io/f/derek@derekbdavis.com" method="POST">
+				<h2 style="text-align: center; margin-bottom: 30px;">Request a Free Consultation</h2>
+				<div class="form-group">
+					<label>Full Name (Required)</label>
+					<input type="text" name="name" required />
+				</div>
+				<div class="form-group">
+					<label>Phone Number (Required)</label>
+					<input type="tel" name="phone" required />
+				</div>
+				<div class="form-group">
+					<label>Email Address (Required)</label>
+					<input type="email" name="email" required />
+				</div>
+				<div class="form-group" style="text-align: center;">
+					<button type="submit" class="form-submit">Request Consultation</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script is:inline>
+		document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+			link.addEventListener('click', function() {
+				console.log('Phone call initiated');
+			});
+		});
+	</script>
+
+	<!-- ProProfs Chat Widget -->
+	<script is:inline type="text/javascript">
+	(function(){var pp=document.createElement('script'), ppr=document.getElementsByTagName('script')[0]; stid='bHR5MFM5dnhBMnBYb2w4aVhlVW5Kdz09';pp.type='text/javascript'; pp.async=true; pp.src=('https:' == document.location.protocol ? 'https://' : 'http://') + 's01.live2support.com/dashboardv2/chatwindow/'; ppr.parentNode.insertBefore(pp, ppr);})();
+	</script>
+</body>
+</html>
