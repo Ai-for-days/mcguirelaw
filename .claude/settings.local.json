@@ -12,7 +12,9 @@
       "Bash(git push:*)",
       "Bash(npm create:*)",
       "Bash(npm install)",
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(git pull:*)",
+      "WebFetch(domain:mcguirelaw.vercel.app)"
     ],
     "deny": [],
     "ask": []
