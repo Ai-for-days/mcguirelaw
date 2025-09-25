@@ -1,0 +1,941 @@
+---
+// Arcadia Lakes Drug Crimes Attorney - McGuire Law
+---
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Arcadia Lakes Drug Crimes Attorney | McGuire Law - Expert Defense</title>
+    <meta name="description" content="Arcadia Lakes drug crimes attorney with 30+ years experience. McGuire Law defends against drug possession, trafficking, manufacturing charges. Free consultation (888) 499-5738." />
+    <meta name="keywords" content="Arcadia Lakes drug crimes attorney, drug possession lawyer, drug trafficking defense, drug manufacturing charges, prescription drug crimes, Arcadia Lakes criminal defense" />
+    <meta property="og:title" content="Arcadia Lakes Drug Crimes Attorney | McGuire Law" />
+    <meta property="og:description" content="Expert Arcadia Lakes drug crimes attorney. 30+ years defending drug possession, trafficking, manufacturing charges. Free consultation available." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mcguirelaw.vercel.app/arcadia-lakes-drug-crimes-attorney" />
+    <link rel="canonical" href="https://mcguirelaw.vercel.app/arcadia-lakes-drug-crimes-attorney" />
+
+    <!-- ZipChat Widget -->
+    <script src='https://app.zipchat.ai/widget/zipchat.js?id=oXCFvhf32LqZkYB7rO5M' data-no-optimize='1' defer></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #0a3161;
+        }
+
+        /* Sticky Header */
+        .sticky-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #b31942;
+            color: #ffffff;
+            padding: 12px 0;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .sticky-header a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .sticky-header a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main content offset for sticky header */
+        .main-content {
+            margin-top: 60px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0a3161 0%, #1e4a73 100%);
+            color: #ffffff;
+            padding: 80px 0 60px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23ffffff" opacity="0.03"/><circle cx="75" cy="75" r="1" fill="%23ffffff" opacity="0.03"/><circle cx="50" cy="10" r="1" fill="%23ffffff" opacity="0.03"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero .subheadline {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            font-weight: 300;
+            opacity: 0.95;
+        }
+
+        .hero .urgency {
+            background: #b31942;
+            color: #ffffff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            font-size: 1.3em;
+            font-weight: bold;
+            margin: 25px auto;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: #ffffff;
+            color: #0a3161;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 30px auto 0;
+            max-width: 600px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 18px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3em;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #b31942;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background: #9e1538;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(179, 25, 66, 0.3);
+        }
+
+        .btn-secondary {
+            background: #0a3161;
+            color: #ffffff;
+        }
+
+        .btn-secondary:hover {
+            background: #083055;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(10, 49, 97, 0.3);
+        }
+
+        .availability {
+            text-align: center;
+            color: #0a3161;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        /* Section Styling with Alternating Backgrounds */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-white {
+            background: #ffffff;
+        }
+
+        .section-gray {
+            background: #f8f9fa;
+        }
+
+        .section-light-blue {
+            background: linear-gradient(135deg, #e3f2fd 0%, #f1f8ff 100%);
+        }
+
+        .section-dark {
+            background: #0a3161;
+            color: #ffffff;
+        }
+
+        .section-pattern {
+            background: #ffffff;
+            background-image:
+                radial-gradient(circle at 25% 25%, rgba(10, 49, 97, 0.03) 2px, transparent 2px),
+                radial-gradient(circle at 75% 75%, rgba(179, 25, 66, 0.03) 2px, transparent 2px);
+            background-size: 60px 60px;
+        }
+
+        /* Card/Panel Design */
+        .card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin-bottom: 30px;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .card-grid-small {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        /* Typography & Visual Hierarchy */
+        h1, h2, h3, h4 {
+            color: #0a3161;
+            margin-bottom: 20px;
+        }
+
+        .section-dark h1, .section-dark h2, .section-dark h3, .section-dark h4 {
+            color: #ffffff;
+        }
+
+        h1 {
+            font-size: 3.2em;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 2.8em;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #b31942;
+        }
+
+        .section-dark h4 {
+            color: #ffd700;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .lead {
+            font-size: 1.3em;
+            font-weight: 300;
+            color: #555;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+
+        .section-dark .lead {
+            color: rgba(255,255,255,0.9);
+        }
+
+        /* Lists */
+        .styled-list {
+            list-style: none;
+            margin-bottom: 30px;
+        }
+
+        .styled-list li {
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+            font-size: 1.1em;
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .styled-list li:before {
+            content: "⚖";
+            color: #b31942;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        .section-dark .styled-list li {
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .section-dark .styled-list li:before {
+            color: #ffd700;
+        }
+
+        /* Stats/Numbers */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin: 50px 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .stat-number {
+            font-size: 3.5em;
+            color: #ffd700;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .stat-text {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        /* Testimonial Cards */
+        .testimonial-card {
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            border-left: 5px solid #b31942;
+            margin-bottom: 30px;
+        }
+
+        .testimonial-text {
+            font-size: 1.2em;
+            line-height: 1.8;
+            font-style: italic;
+            color: #0a3161;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #b31942;
+            border-top: 2px solid #f1f1f1;
+            padding-top: 15px;
+        }
+
+        /* Process Steps */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .step {
+            text-align: center;
+            position: relative;
+            padding: 30px 20px;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #b31942;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+
+        .step h4 {
+            color: #0a3161;
+            margin-bottom: 15px;
+        }
+
+        /* Content Blocks */
+        .content-block {
+            background: #ffffff;
+            padding: 50px;
+            border-radius: 20px;
+            margin: 40px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 50px;
+        }
+
+        /* Call-out boxes */
+        .callout {
+            background: linear-gradient(135deg, #b31942, #9e1538);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .callout h3 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero .subheadline {
+                font-size: 1.2em;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .two-column {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+
+            .section {
+                padding: 50px 0;
+            }
+
+            h2 {
+                font-size: 2.2em;
+            }
+
+            h3 {
+                font-size: 1.6em;
+            }
+
+            .sticky-header {
+                font-size: 1em;
+                padding: 10px 0;
+            }
+
+            .main-content {
+                margin-top: 50px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero {
+                padding: 60px 0 40px;
+            }
+
+            .cta-section {
+                padding: 25px;
+                margin: 20px auto 0;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .card, .content-block {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Sticky Header -->
+    <div class="sticky-header">
+        <div class="container">
+            Get Legal Help Now - <a href="tel:8884995738">(888) 499-5738</a> - McGuire Law
+        </div>
+    </div>
+
+    <div class="main-content">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Arcadia Lakes Drug Crimes Attorney</h1>
+                    <p class="subheadline">When drug charges threaten your freedom in Arcadia Lakes, the stakes couldn't be higher.</p>
+                    <div class="urgency">
+                        Don't Face Drug Charges Alone - Every Minute Counts
+                    </div>
+
+                    <div class="cta-section">
+                        <div class="cta-buttons">
+                            <a href="tel:8884995738" class="btn-primary">Call (888) 499-5738</a>
+                            <a href="#consultation" class="btn-secondary">Free Consultation</a>
+                        </div>
+                        <div class="availability">
+                            Available 24/7 - Immediate Response for Drug Arrests
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="section section-dark">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number">30+</span>
+                        <div class="stat-text">Years Defending Drug Cases</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <div class="stat-text">Emergency Response</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <div class="stat-text">Dedicated to Your Defense</div>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Free</span>
+                        <div class="stat-text">Initial Consultation</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Introduction Section -->
+        <div class="section section-white">
+            <div class="container">
+                <div class="content-block">
+                    <p class="lead">Whether you're facing possession charges after a traffic stop on Two Notch Road or distribution allegations stemming from an investigation near the Forest Lake area, these criminal accusations can destroy your career, family relationships, and future opportunities.</p>
+
+                    <p>South Carolina's harsh drug laws impose severe penalties that can include lengthy prison sentences, substantial fines, and permanent criminal records that follow you for life. The Columbia Police Department and Richland County Sheriff's Office aggressively pursue drug cases in our community, often using sophisticated surveillance techniques and confidential informants to build their cases.</p>
+
+                    <p><strong>Don't let a momentary lapse in judgment or being in the wrong place at the wrong time derail your entire future.</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Local Law Enforcement Section -->
+        <div class="section section-gray">
+            <div class="container">
+                <h2>Local Law Enforcement Landscape & Court Procedures</h2>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <h4>🚔 Law Enforcement Operations</h4>
+                        <p>Arcadia Lakes residents face drug charges primarily through Richland County Sheriff's Office patrols and Columbia Police Department operations along major corridors like Forest Drive and Two Notch Road.</p>
+                    </div>
+                    <div class="card">
+                        <h4>⚖️ Court System Navigation</h4>
+                        <p>Cases typically proceed through the Richland County Magistrate Court for initial appearances and bond hearings before moving to General Sessions Court for felony matters.</p>
+                    </div>
+                    <div class="card">
+                        <h4>🏛️ Fifth Judicial Circuit</h4>
+                        <p>The Fifth Judicial Circuit handles serious drug prosecutions with experienced prosecutors who rarely offer lenient plea agreements without strong defense advocacy.</p>
+                    </div>
+                    <div class="card">
+                        <h4>🔍 Joint Operations</h4>
+                        <p>Local law enforcement frequently conducts joint operations with SLED agents and federal DEA task forces, escalating simple possession cases into complex federal investigations.</p>
+                    </div>
+                    <div class="card">
+                        <h4>🏠 Search Warrants</h4>
+                        <p>Search warrants for Arcadia Lakes homes often stem from controlled buys, surveillance operations, or tips from confidential informants working with multiple agencies.</p>
+                    </div>
+                    <div class="card">
+                        <h4>💰 Bond Considerations</h4>
+                        <p>Bond amounts for drug crimes in Richland County courts can be substantial, particularly for repeat offenders or cases involving alleged distribution activities.</p>
+                    </div>
+                </div>
+
+                <div class="callout">
+                    <h3>University Area Enforcement</h3>
+                    <p>The proximity to University of South Carolina creates heightened enforcement around student housing areas, with campus police coordinating closely with local authorities.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Specific Charges Section -->
+        <div class="section section-light-blue">
+            <div class="container">
+                <h2>Specific Charges We Defend & Legal Definitions</h2>
+                <p class="lead">Understanding the specific charges you face is crucial to building an effective defense strategy.</p>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <h4>📋 Simple Possession</h4>
+                        <p>Simple possession charges for marijuana, cocaine, heroin, methamphetamine, prescription drugs, and synthetic substances under South Carolina Code Section 44-53-370.</p>
+                    </div>
+                    <div class="card">
+                        <h4>📦 Intent to Distribute</h4>
+                        <p>Possession with intent to distribute based on quantity, packaging materials, scales, cash, or other circumstantial evidence that prosecutors use to upgrade charges.</p>
+                    </div>
+                    <div class="card">
+                        <h4>🚛 Drug Trafficking</h4>
+                        <p>Drug trafficking allegations that carry mandatory minimum sentences ranging from 10 years to 30 years depending on the substance type and quantity involved.</p>
+                    </div>
+                    <div class="card">
+                        <h4>💊 Prescription Fraud</h4>
+                        <p>Prescription drug fraud involving forged prescriptions, doctor shopping, or unlawful distribution of controlled substances obtained through legitimate prescriptions.</p>
+                    </div>
+                    <div class="card">
+                        <h4>🏭 Manufacturing</h4>
+                        <p>Manufacturing charges for operations involving methamphetamine labs, marijuana cultivation, or other drug production activities discovered through search warrants.</p>
+                    </div>
+                    <div class="card">
+                        <h4>🔧 Drug Paraphernalia</h4>
+                        <p>Drug paraphernalia possession for items like pipes, bongs, scales, baggies, or other implements that prosecutors claim demonstrate drug use or distribution.</p>
+                    </div>
+                    <div class="card">
+                        <h4>🏫 School Zone Enhancements</h4>
+                        <p>School zone enhancements that automatically increase penalties when drug activity allegedly occurs within 1,000 feet of educational facilities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Defense Strategies Section -->
+        <div class="section section-pattern">
+            <div class="container">
+                <h2>Defense Strategies & Constitutional Protections</h2>
+                <p class="lead">Our experienced defense team uses proven strategies to protect your rights and freedom.</p>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <h4>🛡️ Fourth Amendment Protection</h4>
+                        <p>Challenging illegal searches and seizures through Fourth Amendment motions to suppress evidence obtained without proper warrants or probable cause.</p>
+                    </div>
+                    <div class="card">
+                        <h4>🕵️ Confidential Informant Issues</h4>
+                        <p>Questioning the reliability and credibility of confidential informants whose testimony often forms the foundation of prosecution cases.</p>
+                    </div>
+                    <div class="card">
+                        <h4>🔗 Chain of Custody</h4>
+                        <p>Examining chain of custody issues with physical evidence to identify gaps or contamination that could compromise the integrity of drug testing.</p>
+                    </div>
+                    <div class="card">
+                        <h4>👮 Police Misconduct</h4>
+                        <p>Investigating police misconduct, including planted evidence, false reports, or violations of proper arrest procedures during your encounter.</p>
+                    </div>
+                    <div class="card">
+                        <h4>🤝 Plea Negotiations</h4>
+                        <p>Negotiating plea agreements that minimize prison time, reduce charges, or provide alternative sentencing options like drug court or probation.</p>
+                    </div>
+                    <div class="card">
+                        <h4>🔄 Pretrial Diversion</h4>
+                        <p>Pursuing pretrial diversion programs available for first-time offenders that can result in charge dismissals upon successful completion.</p>
+                    </div>
+                    <div class="card">
+                        <h4>🏥 Medical Necessity</h4>
+                        <p>Building medical necessity defenses for prescription drug cases or challenging the validity of prescriptions and medical documentation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Common Arrest Scenarios Section -->
+        <div class="section section-white">
+            <div class="container">
+                <h2>Common Arrest Scenarios & Investigation Process</h2>
+                <p class="lead">Understanding how drug investigations typically unfold helps us identify weaknesses in the prosecution's case.</p>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <h4>🚗 Traffic Stops</h4>
+                        <p>Traffic stops on major Arcadia Lakes thoroughfares where officers claim to smell marijuana or observe suspicious behavior leading to vehicle searches.</p>
+                    </div>
+                    <div class="card">
+                        <h4>🏠 Search Warrants</h4>
+                        <p>Search warrants executed on residential properties following lengthy surveillance operations, controlled purchases, or tips from confidential informants.</p>
+                    </div>
+                    <div class="card">
+                        <h4>💊 Prescription Fraud</h4>
+                        <p>Prescription fraud investigations initiated by pharmacy reports, insurance fraud alerts, or medical provider suspicious activity reports to law enforcement.</p>
+                    </div>
+                    <div class="card">
+                        <h4>🎓 University Area</h4>
+                        <p>University area arrests involving students or young adults caught with drugs during parties, tailgating events, or routine campus police interactions.</p>
+                    </div>
+                    <div class="card">
+                        <h4>💼 Workplace Testing</h4>
+                        <p>Workplace drug testing failures that lead to criminal investigations when employers report suspected illegal substance use to authorities.</p>
+                    </div>
+                    <div class="card">
+                        <h4>✈️ Transportation Hubs</h4>
+                        <p>Airport or transportation hub arrests where TSA agents discover drugs during security screenings and immediately contact local law enforcement.</p>
+                    </div>
+                    <div class="card">
+                        <h4>📱 Social Media</h4>
+                        <p>Social media investigations where law enforcement monitors online activity for evidence of drug sales or distribution networks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials Section -->
+        <div class="section section-pattern">
+            <div class="container">
+                <h2>What Our Drug Crime Clients Say</h2>
+                <p class="lead">Real results from real clients who faced serious drug charges in South Carolina.</p>
+
+                <div class="card-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "McGuire Law saved my career when I faced drug charges as a nurse. They understood the professional license implications."
+                        </div>
+                        <div class="testimonial-author">-Amanda R., Arcadia Lakes, SC</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "I got arrested with drugs in college and Mr. McGuire got the charges dismissed. My future was saved!"
+                        </div>
+                        <div class="testimonial-author">-Tyler J., Columbia, SC</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "Facing federal drug trafficking charges was terrifying. McGuire Law fought for me and negotiated a deal that kept me out of prison."
+                        </div>
+                        <div class="testimonial-author">-Marcus T., Richland County, SC</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "They challenged the search warrant and got all the evidence suppressed. The prosecution had to dismiss my drug case."
+                        </div>
+                        <div class="testimonial-author">-Jennifer K., Forest Acres, SC</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "They got me into drug court instead of prison. McGuire Law saved my life and helped me get clean."
+                        </div>
+                        <div class="testimonial-author">-Robert L., Irmo, SC</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "McGuire law does not play around. Don't think you can handle drug charges yourself. You can't, so hire Mr. McGuire."
+                        </div>
+                        <div class="testimonial-author">-Xander H., Spartanburg, SC</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Consequences Section -->
+        <div class="section section-dark">
+            <div class="container">
+                <h2>Sentencing Consequences & Collateral Damage</h2>
+                <p class="lead">Drug convictions in South Carolina carry severe penalties that extend far beyond prison time.</p>
+
+                <div class="two-column">
+                    <div>
+                        <h3>Criminal Penalties</h3>
+                        <ul class="styled-list">
+                            <li>Felony drug convictions result in permanent criminal records that appear on employment background checks, professional licensing applications, and housing applications</li>
+                            <li>Prison sentences ranging from 30 days for simple possession to 30 years for trafficking charges, with mandatory minimums that judges cannot reduce</li>
+                            <li>Substantial fines up to $50,000 for serious drug offenses, plus court costs, probation fees, and drug testing expenses that can total thousands of dollars</li>
+                            <li>Driver's license suspensions for six months to two years, even for drug crimes unrelated to driving or vehicle operation</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Life-Altering Consequences</h3>
+                        <ul class="styled-list">
+                            <li>Professional license revocations affecting careers in healthcare, education, finance, law, and other regulated industries that require clean criminal backgrounds</li>
+                            <li>Immigration consequences for non-citizens, including deportation proceedings, inability to obtain citizenship, or bars to reentry into the United States</li>
+                            <li>Loss of federal student aid eligibility, public housing assistance, food stamps, and other government benefits essential for family stability</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="callout">
+                    <h3>Your Future Depends on Your Next Decision</h3>
+                    <p>The prosecution has unlimited resources to convict you. Level the playing field with experienced legal representation that has defended drug cases for over 30 years.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Local Knowledge Section -->
+        <div class="section section-gray">
+            <div class="container">
+                <h2>Local Arcadia Lakes Legal Expertise</h2>
+                <p class="lead">Our deep knowledge of the Arcadia Lakes area and surrounding jurisdictions gives your case a strategic advantage.</p>
+
+                <div class="content-block">
+                    <div class="two-column">
+                        <div>
+                            <h3>We Know The Area</h3>
+                            <p>Arcadia Lakes is a small community in Richland County, South Carolina. Drug cases here are typically handled through the Richland County court system, and we've been practicing in these courts for over three decades.</p>
+                            <p>Our familiarity with local law enforcement procedures, prosecutor tendencies, and judicial preferences allows us to tailor defense strategies that work specifically in this jurisdiction.</p>
+                        </div>
+                        <div>
+                            <h3>Court Relationships Matter</h3>
+                            <p>After 30+ years of practice, we've built professional relationships with prosecutors, judges, and court staff. These relationships don't guarantee outcomes, but they do ensure your case receives proper attention and consideration.</p>
+                            <p>We understand how each prosecutor approaches drug cases and can anticipate their strategies, giving us time to prepare more effective counter-arguments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="section section-white">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <p class="lead">Get answers to the most common questions about drug charges and legal defense in South Carolina.</p>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <h4>What should I do if I'm arrested for drug charges?</h4>
+                        <p>Remain silent and ask for an attorney immediately. Don't answer questions or consent to searches. Contact McGuire Law as soon as possible - we're available 24/7 for emergencies.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Can drug charges be dismissed?</h4>
+                        <p>Yes, drug charges can be dismissed for various reasons including illegal searches, improper evidence handling, lack of probable cause, or constitutional violations. We've successfully gotten many drug cases dismissed.</p>
+                    </div>
+                    <div class="card">
+                        <h4>What's the difference between possession and trafficking?</h4>
+                        <p>Possession typically involves smaller amounts for personal use, while trafficking involves larger quantities or intent to distribute. Trafficking carries much harsher penalties, sometimes including mandatory minimums.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Will I go to prison for a first-time drug offense?</h4>
+                        <p>Not necessarily. First-time offenders often have options like drug court, PTI (Pre-Trial Intervention), or suspended sentences. We work to keep first-time offenders out of prison.</p>
+                    </div>
+                    <div class="card">
+                        <h4>How much does a drug crime attorney cost?</h4>
+                        <p>Every case is different. We offer free consultations to discuss your case and explain our fee structure. Many clients find our fees are much less than the cost of a conviction.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Can prescription drug charges be defended?</h4>
+                        <p>Absolutely. Prescription drug cases often involve valid prescriptions, shared medications, or mistaken identity. We have specific strategies for defending prescription drug charges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Final CTA Section -->
+        <div class="section section-dark">
+            <div class="container">
+                <h2>Contact McGuire Law Today</h2>
+                <p class="lead">Don't let drug charges destroy your future in Arcadia Lakes. Attorney Matthew McGuire has defended drug cases throughout Richland County for over 30 years, and he's available 24/7/365 to protect your rights and freedom.</p>
+
+                <div class="cta-section" style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
+                    <div class="cta-buttons">
+                        <a href="tel:8884995738" class="btn-primary">Call (888) 499-5738</a>
+                        <a href="#consultation" class="btn-secondary">Free Consultation</a>
+                    </div>
+                    <div class="availability" style="color: #ffffff;">
+                        Available 24/7/365 - Immediate Response for Drug Arrests
+                    </div>
+                </div>
+
+                <div class="callout" style="margin-top: 40px; background: linear-gradient(135deg, #ffd700, #f0c814); color: #0a3161;">
+                    <h3 style="color: #0a3161;">"Justice delayed is justice denied – but justice rushed is justice crushed."</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Phone click tracking
+        document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+            link.addEventListener('click', function() {
+                console.log('Phone call initiated from Arcadia Lakes page');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
