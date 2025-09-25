@@ -18,6 +18,7 @@
     <meta property="og:url" content="https://mcguirelaw.vercel.app/" />
     <link rel="canonical" href="https://mcguirelaw.vercel.app/" />
 
+
     <!-- Schema.org Markup for Law Firm -->
     <script type="application/ld+json">
     {
@@ -1142,24 +1143,18 @@
             });
         });
     </script>
+
     <!-- ProProfs Live Chat -->
-    <script is:inline>
-    window.stid = 'bHR5MFM5dnhBMnBYb2w4aVhlVW5Kdz09';
-
-    function loadProProfsChat() {
-        var pp = document.createElement('script');
-        var ppr = document.getElementsByTagName('script')[0];
-        pp.type = 'text/javascript';
-        pp.async = true;
-        pp.src = 'https://s01.live2support.com/dashboardv2/chatwindow/';
-        ppr.parentNode.insertBefore(pp, ppr);
-    }
-
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', loadProProfsChat);
-    } else {
-        loadProProfsChat();
-    }
+    <script>
+        var stid = 'bHR5MFM5dnhBMnBYb2w4aVhlVW5Kdz09';
+        (function(){
+            var pp = document.createElement('script'),
+                ppr = document.getElementsByTagName('script')[0];
+            pp.type = 'text/javascript';
+            pp.async = true;
+            pp.src = 'https://s01.live2support.com/dashboardv2/chatwindow/';
+            ppr.parentNode.insertBefore(pp, ppr);
+        })();
     </script>
 </body>
 </html>
