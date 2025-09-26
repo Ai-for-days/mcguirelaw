@@ -1,0 +1,787 @@
+---
+// McGuire Law Test Landing Page
+---
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>South Carolina's Premier Legal Defense - McGuire Law: Criminal Defense, Personal Injury & Family Law</title>
+    <meta name="description" content="McGuire Law provides expert criminal defense, personal injury, and family law representation throughout South Carolina. Available 24/7. Free consultation." />
+    <meta name="keywords" content="South Carolina attorney, criminal defense, personal injury, family law, McGuire Law, Columbia lawyer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #0a3161;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: #0a3161;
+            color: #ffffff;
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .header-contact {
+            text-align: right;
+        }
+
+        .phone-number {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .phone-number:hover {
+            color: #ffd700;
+        }
+
+        .availability {
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(10, 49, 97, 0.8), rgba(10, 49, 97, 0.8)), url('/src/assets/hero-image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+            padding: 120px 0 80px;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero .subtitle {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+
+        .btn-primary, .btn-secondary {
+            padding: 18px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.3em;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #b31942;
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background: #9e1538;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(179, 25, 66, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid #ffffff;
+        }
+
+        .btn-secondary:hover {
+            background: #ffffff;
+            color: #0a3161;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-white {
+            background: #ffffff;
+        }
+
+        .section-gray {
+            background: #f8f9fa;
+        }
+
+        .section-blue {
+            background: #0a3161;
+            color: #ffffff;
+        }
+
+        .section-pattern {
+            background: #ffffff;
+            background-image:
+                radial-gradient(circle at 25% 25%, rgba(10, 49, 97, 0.03) 2px, transparent 2px),
+                radial-gradient(circle at 75% 75%, rgba(179, 25, 66, 0.03) 2px, transparent 2px);
+            background-size: 60px 60px;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2.8em;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #0a3161;
+        }
+
+        .section-blue h2 {
+            color: #ffffff;
+        }
+
+        h3 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #0a3161;
+        }
+
+        .section-blue h3 {
+            color: #ffd700;
+        }
+
+        h4 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #b31942;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .lead {
+            font-size: 1.3em;
+            font-weight: 300;
+            color: #555;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+
+        .section-blue .lead {
+            color: rgba(255,255,255,0.9);
+        }
+
+        /* Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .section-blue .card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            color: #ffffff;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin: 50px 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .stat-number {
+            font-size: 3.5em;
+            color: #b31942;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .section-blue .stat-number {
+            color: #ffd700;
+        }
+
+        .stat-text {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        /* Testimonial Cards */
+        .testimonial-card {
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+            border-left: 5px solid #b31942;
+            margin-bottom: 30px;
+        }
+
+        .testimonial-text {
+            font-size: 1.2em;
+            line-height: 1.8;
+            font-style: italic;
+            color: #0a3161;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            color: #b31942;
+            border-top: 2px solid #f1f1f1;
+            padding-top: 15px;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            border-top: 4px solid #b31942;
+        }
+
+        .service-card h4 {
+            color: #0a3161;
+            margin-bottom: 15px;
+        }
+
+        /* Call-out boxes */
+        .callout {
+            background: linear-gradient(135deg, #b31942, #9e1538);
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .callout h3 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        /* FAQ Section */
+        .faq-item {
+            background: #ffffff;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .faq-question {
+            background: #0a3161;
+            color: #ffffff;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .faq-answer {
+            padding: 20px;
+            color: #0a3161;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .contact-item {
+            text-align: center;
+            padding: 30px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .contact-icon {
+            font-size: 3em;
+            color: #ffd700;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .hero .subtitle {
+                font-size: 1.2em;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card-grid, .services-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .section {
+                padding: 50px 0;
+            }
+
+            h2 {
+                font-size: 2.2em;
+            }
+
+            h3 {
+                font-size: 1.6em;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .hero {
+                padding: 100px 0 60px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .card, .service-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="/src/assets/logo-white-bg.png" alt="McGuire Law Logo" />
+                </div>
+                <div class="header-contact">
+                    <a href="tel:8884995738" class="phone-number">(888) 499-5738</a>
+                    <div class="availability">Available 24/7 for Emergencies</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>South Carolina's Premier Legal Defense</h1>
+            <p class="subtitle">McGuire Law: Criminal Defense, Personal Injury & Family Law</p>
+            <p>When your freedom, your family, or your future is on the line, you need more than just any lawyer – you need Matt McGuire and the proven legal team at McGuire Law.</p>
+
+            <div class="cta-buttons">
+                <a href="tel:8884995738" class="btn-primary">Call Now - Free Consultation</a>
+                <a href="#contact" class="btn-secondary">Get Started Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose McGuire Law Section -->
+    <section class="section section-white">
+        <div class="container">
+            <h2>Why Choose Matt McGuire and McGuire Law?</h2>
+            <p class="lead">Choosing the right attorney isn't just about credentials – it's about finding someone who will fight for you like their own family depends on it. At McGuire Law, that's exactly what you get.</p>
+
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">30+</span>
+                    <div class="stat-text">Years of Experience</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <div class="stat-text">Emergency Response</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <div class="stat-text">Cases Won</div>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <div class="stat-text">Personal Attention</div>
+                </div>
+            </div>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Available 24/7 - Not Your Typical TV Law Firm</h3>
+                    <p>"McGuire Law is not like the law firms advertising on TV that run an assembly line. They are available all day, every day, home or office." - Darrell M., Orangeburg, SC</p>
+                    <p>When legal trouble strikes, it doesn't wait for business hours. Whether it's a weekend arrest, a late-night accident, or an urgent family law matter, we respond when you need us most.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Proven Results That Speak Louder Than Ads</h3>
+                    <p>While other firms spend millions on flashy commercials, we let our results do the talking:</p>
+                    <ul>
+                        <li>Getting clients out of jail when others couldn't</li>
+                        <li>Securing settlements 10 times higher than initial insurance offers</li>
+                        <li>Getting serious charges dismissed at preliminary hearings</li>
+                        <li>Protecting professional licenses from criminal charges</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Criminal Defense Section -->
+    <section class="section section-gray">
+        <div class="container">
+            <h2>Criminal Defense: Protecting Your Freedom and Future</h2>
+            <p class="lead">Facing criminal charges can destroy everything you've worked for. Your job, your reputation, your freedom – it's all at risk.</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <h4>Drug Charges Defense</h4>
+                    <p>South Carolina takes drug charges seriously, but so do we. From simple possession to complex trafficking cases, we've successfully defended clients facing all levels of drug charges.</p>
+
+                    <h5>Federal Drug Trafficking Cases</h5>
+                    <p>"Facing federal drug trafficking charges was terrifying. McGuire Law fought for me and negotiated a deal that kept me out of prison." - Marcus T., Richland County, SC</p>
+
+                    <h5>College Drug Possession</h5>
+                    <p>"I got arrested with drugs in college and Mr. McGuire got the charges dismissed. My future was saved!" - Tyler J., Columbia, SC</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>Domestic Violence Defense</h4>
+                    <p>False domestic violence accusations can destroy reputations and relationships. We thoroughly investigate every case, expose lies, and fight for complete dismissal when our clients are wrongly accused.</p>
+                    <p>"When I faced false domestic violence charges, McGuire Law exposed the lies and got my case dismissed. They saved my reputation." - David L., Charleston, SC</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>DUI/DWI Defense</h4>
+                    <p>A DUI conviction affects more than just your driving record – it can impact your job, insurance rates, and personal reputation. We challenge every aspect of DUI cases, from the initial stop to the breath test results.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>Professional License Protection</h4>
+                    <p>If you're a nurse, doctor, teacher, or other licensed professional, criminal charges pose a double threat. We understand these unique challenges and fight to protect both your freedom and your career.</p>
+                    <p>"McGuire Law saved my career when I faced drug charges as a nurse. They understood the professional license implications." - Amanda R., Arcadia Lakes, SC</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Injury Section -->
+    <section class="section section-blue">
+        <div class="container">
+            <h2>Personal Injury: Fighting for Maximum Compensation</h2>
+            <p class="lead">When someone else's negligence leaves you injured, insurance companies immediately start working to minimize their payout. From the moment you call us, we start fighting to maximize yours.</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Car Accident Claims</h3>
+                    <p>South Carolina's roads can be dangerous, and car accidents happen every day. When they do, insurance companies try to settle quickly for far less than your case is worth.</p>
+                    <p>"After my car accident, insurance companies tried to lowball me. McGuire Law fought hard and got me ten times more than their initial offer." - Rebecca M., Arcadia Lakes, SC</p>
+                </div>
+
+                <div class="card">
+                    <h3>Truck Accident Cases</h3>
+                    <p>Trucking accidents often result in catastrophic injuries and complex legal battles against well-funded trucking companies. We have the experience and resources to take on these corporate giants and win.</p>
+                    <p>"When my husband died in a truck accident, McGuire Law fought the trucking company and their lawyers. They secured our family's financial future." - Patricia K., Columbia, SC</p>
+                </div>
+
+                <div class="card">
+                    <h3>Medical Malpractice</h3>
+                    <p>When doctors and hospitals fail in their duty to provide proper care, the consequences can be devastating. We hold medical professionals accountable and fight for the compensation needed for ongoing care and recovery.</p>
+
+                    <h4>Birth Injury Cases</h4>
+                    <p>"When our baby suffered a birth injury, McGuire Law fought tirelessly to secure the resources our child needed for their future. They truly care about families." - Sarah T., Charleston, SC</p>
+
+                    <h4>Brain Injury Claims</h4>
+                    <p>"Outstanding legal representation in my brain injury case. Mr. McGuire's experience and dedication made all the difference for my recovery." - Michael P., Greenville, SC</p>
+                </div>
+
+                <div class="card">
+                    <h3>Wrongful Death</h3>
+                    <p>When negligence takes the life of someone you love, no amount of money can truly compensate for your loss. But securing proper compensation can help protect your family's financial future and hold responsible parties accountable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Family Law Section -->
+    <section class="section section-pattern">
+        <div class="container">
+            <h2>Family Law: Protecting What Matters Most</h2>
+            <p class="lead">Family law matters are deeply personal and emotionally charged. Whether you're going through a divorce, fighting for custody, or dealing with other family legal issues, we provide both skilled legal representation and compassionate support.</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Divorce and Child Custody</h3>
+                    <p>Divorce affects every aspect of your life, from your financial future to your relationship with your children. We fight to protect your interests while helping you navigate this difficult time.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Domestic Relations</h3>
+                    <p>Family legal matters require both legal expertise and emotional intelligence. We handle each case with the sensitivity it deserves while aggressively protecting our clients' rights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Success Stories Section -->
+    <section class="section section-white">
+        <div class="container">
+            <h2>Real Client Success Stories</h2>
+
+            <h3>Criminal Defense Victories</h3>
+            <div class="card-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Outstanding legal representation in my criminal case. Mr. McGuire's experience and dedication made all the difference."
+                    </div>
+                    <div class="testimonial-author">- Michael P., Greenville, SC</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Mr. McGuire's knowledge of self-defense law got my assault charges reduced to a minor infraction. Amazing results!"
+                    </div>
+                    <div class="testimonial-author">- Anthony S., Rock Hill, SC</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Professional, aggressive defense that protected my freedom when I defended my family. Highly recommend McGuire Law."
+                    </div>
+                    <div class="testimonial-author">- Jennifer K., Aiken, SC</div>
+                </div>
+            </div>
+
+            <h3>Personal Injury Settlements</h3>
+            <div class="card-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Outstanding legal representation in our cerebral palsy case. Mr. McGuire's experience and dedication secured justice for our family."
+                    </div>
+                    <div class="testimonial-author">- Robert K., Columbia, SC</div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "The team at McGuire Law provided compassionate support during our birth injury case. They secured the lifetime care our child deserved."
+                    </div>
+                    <div class="testimonial-author">- Jennifer L., Rock Hill, SC</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The McGuire Law Difference Section -->
+    <section class="section section-blue">
+        <div class="container">
+            <h2>The McGuire Law Difference</h2>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Personal Attention, Not Assembly Line Service</h3>
+                    <p>"I have sent Matt more referrals than I can count at this point. Everyone is always astonished at the effort Matt and McGuire Law put into every case." - Dan V., Sumter, SC</p>
+                    <p>At McGuire Law, you're not just a case number. You're a person facing a critical moment in your life, and you deserve an attorney who treats your case with the urgency and attention it demands.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Same-Day Response Guarantee</h3>
+                    <p>When you're facing legal trouble, every hour counts. That's why we guarantee same-day response to all client inquiries. In many cases, we respond within the hour – even on weekends.</p>
+                    <p>"If you need the best personal injury attorney in South Carolina, you call McGuire Law right now. I talked to an attorney with one call." - Hilary A., Columbia, SC</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-gray">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">How quickly can you respond to my legal emergency?</div>
+                <div class="faq-answer">We guarantee same-day response to all client inquiries, and in many cases, we respond within an hour – even on weekends. For true emergencies like arrests or serious accidents, we're available 24/7 and can often begin working on your case immediately.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What makes McGuire Law different from the big TV advertising firms?</div>
+                <div class="faq-answer">Unlike assembly-line law firms that handle hundreds of cases, we provide personal attention to every client. You'll work directly with Matt McGuire, not a paralegal or junior associate. We focus on winning your case, not generating volume.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Do you offer free consultations for all practice areas?</div>
+                <div class="faq-answer">Yes, we offer free consultations for criminal defense, personal injury, and family law matters. During this consultation, we'll evaluate your case, explain your options, and provide honest advice about the best path forward.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Can you help if I'm under investigation but haven't been charged yet?</div>
+                <div class="faq-answer">Absolutely. In fact, involving an attorney before charges are filed often gives us more options to protect your rights and potentially prevent charges altogether. The earlier we're involved, the better we can protect your interests.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How do you handle fees for different types of cases?</div>
+                <div class="faq-answer">Criminal defense and family law cases are typically handled on an hourly or flat-fee basis, depending on the complexity. Personal injury cases are handled on a contingency fee basis – you don't pay unless we win your case. We'll clearly explain all fees during your free consultation.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="section section-blue" id="contact">
+        <div class="container">
+            <h2>Free Consultation - Get Started Today</h2>
+            <p class="lead">Don't wait to protect your rights. Every day you delay could hurt your case. Call McGuire Law now for your free consultation, and find out how we can help protect your freedom, your family, and your future.</p>
+
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <h4>Call Now</h4>
+                    <a href="tel:8884995738" class="phone-number">(888) 499-5738</a>
+                    <p>Available 24/7 for emergencies</p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <h4>Email</h4>
+                    <p>info@mcguirelawsc.com</p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">🏢</div>
+                    <h4>Main Office</h4>
+                    <p>Columbia, SC</p>
+                    <p>Serving all of South Carolina</p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">🌐</div>
+                    <h4>Website</h4>
+                    <p>mcguirelawsc.com</p>
+                </div>
+            </div>
+
+            <div class="callout">
+                <h3>When your freedom, your family, or your financial future is at stake, you need more than just any attorney – you need Matt McGuire and McGuire Law.</h3>
+                <p>Don't let another day pass without proper legal protection. Call McGuire Law now and experience the difference that personal, aggressive, and effective legal representation can make in your case.</p>
+
+                <div class="cta-buttons">
+                    <a href="tel:8884995738" class="btn-primary">Call Now - (888) 499-5738</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Phone click tracking
+        document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+            link.addEventListener('click', function() {
+                console.log('Phone call initiated from test page');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
