@@ -10,8 +10,13 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>South Carolina's Premier Legal Defense - McGuire Law: Criminal Defense, Personal Injury & Family Law</title>
-    <meta name="description" content="McGuire Law provides expert criminal defense, personal injury, and family law representation throughout South Carolina. Available 24/7. Free consultation." />
-    <meta name="keywords" content="South Carolina attorney, criminal defense, personal injury, family law, McGuire Law, Columbia lawyer" />
+    <meta name="description" content="McGuire Law provides expert criminal defense, personal injury, and family law representation throughout South Carolina. Available 24/7 emergency legal help. Call (888) 499-5738." />
+    <meta name="keywords" content="South Carolina attorney, criminal defense, personal injury, family law, McGuire Law, Columbia lawyer, emergency legal help, 24/7 attorney" />
+    <meta property="og:title" content="South Carolina's Premier Legal Defense - McGuire Law" />
+    <meta property="og:description" content="Expert criminal defense, personal injury, and family law representation throughout South Carolina. Available 24/7 emergency legal help." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mcguirelaw.vercel.app/testpage" />
+    <link rel="canonical" href="https://mcguirelaw.vercel.app/testpage" />
 
     <style>
         * {
@@ -34,7 +39,7 @@
 
         /* Header */
         .header {
-            background: #0a3161;
+            background: #b31942;
             color: #ffffff;
             padding: 15px 0;
             position: fixed;
@@ -52,26 +57,25 @@
 
         .logo img {
             height: 50px;
+            filter: brightness(0) invert(1);
         }
 
-        .header-contact {
-            text-align: right;
-        }
-
-        .phone-number {
-            font-size: 1.3em;
+        .emergency-text {
+            font-size: 1.1em;
             font-weight: bold;
             color: #ffffff;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .emergency-phone {
+            color: #ffffff;
             text-decoration: none;
+            font-weight: bold;
         }
 
-        .phone-number:hover {
+        .emergency-phone:hover {
             color: #ffd700;
-        }
-
-        .availability {
-            font-size: 0.9em;
-            margin-top: 5px;
         }
 
         /* Hero Section */
@@ -196,7 +200,7 @@
         h4 {
             font-size: 1.5em;
             margin-bottom: 15px;
-            color: #b31942;
+            color: #0a3161;
         }
 
         p {
@@ -261,7 +265,7 @@
 
         .stat-number {
             font-size: 3.5em;
-            color: #b31942;
+            color: #0a3161;
             font-weight: bold;
             display: block;
             margin-bottom: 10px;
@@ -282,7 +286,7 @@
             padding: 35px;
             border-radius: 15px;
             box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-            border-left: 5px solid #b31942;
+            border-left: 5px solid #0a3161;
             margin-bottom: 30px;
         }
 
@@ -296,7 +300,7 @@
 
         .testimonial-author {
             font-weight: bold;
-            color: #b31942;
+            color: #0a3161;
             border-top: 2px solid #f1f1f1;
             padding-top: 15px;
         }
@@ -314,7 +318,7 @@
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-            border-top: 4px solid #b31942;
+            border-top: 4px solid #0a3161;
         }
 
         .service-card h4 {
@@ -449,11 +453,10 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <img src="/src/assets/mcguire-law-white.png" alt="McGuire Law Logo" />
+                    <img src="/src/assets/mcguire-law-logo.jpg" alt="McGuire Law Logo" />
                 </div>
-                <div class="header-contact">
-                    <a href="tel:8884995738" class="phone-number">(888) 499-5738</a>
-                    <div class="availability">Available 24/7 for Emergencies</div>
+                <div class="emergency-text">
+                    24/7 Emergency Legal Help Available - Call Now: <a href="tel:8884995738" class="emergency-phone">888-499-5738</a>
                 </div>
             </div>
         </div>
@@ -467,8 +470,7 @@
             <p>When your freedom, your family, or your future is on the line, you need more than just any lawyer – you need Matt McGuire and the proven legal team at McGuire Law.</p>
 
             <div class="cta-buttons">
-                <a href="tel:8884995738" class="btn-primary">Call Now - Free Consultation</a>
-                <a href="#contact" class="btn-secondary">Get Started Today</a>
+                <a href="tel:8884995738" class="btn-primary">Call Now</a>
             </div>
         </div>
     </section>
@@ -699,10 +701,6 @@
                 <div class="faq-answer">Unlike assembly-line law firms that handle hundreds of cases, we provide personal attention to every client. You'll work directly with Matt McGuire, not a paralegal or junior associate. We focus on winning your case, not generating volume.</div>
             </div>
 
-            <div class="faq-item">
-                <div class="faq-question">Do you offer free consultations for all practice areas?</div>
-                <div class="faq-answer">Yes, we offer free consultations for criminal defense, personal injury, and family law matters. During this consultation, we'll evaluate your case, explain your options, and provide honest advice about the best path forward.</div>
-            </div>
 
             <div class="faq-item">
                 <div class="faq-question">Can you help if I'm under investigation but haven't been charged yet?</div>
@@ -711,7 +709,7 @@
 
             <div class="faq-item">
                 <div class="faq-question">How do you handle fees for different types of cases?</div>
-                <div class="faq-answer">Criminal defense and family law cases are typically handled on an hourly or flat-fee basis, depending on the complexity. Personal injury cases are handled on a contingency fee basis – you don't pay unless we win your case. We'll clearly explain all fees during your free consultation.</div>
+                <div class="faq-answer">Criminal defense and family law cases are typically handled on an hourly or flat-fee basis, depending on the complexity. Personal injury cases are handled on a contingency fee basis – you don't pay unless we win your case. We'll clearly explain all fees during your consultation.</div>
             </div>
         </div>
     </section>
@@ -719,8 +717,8 @@
     <!-- Final CTA Section -->
     <section class="section section-blue" id="contact">
         <div class="container">
-            <h2>Free Consultation - Get Started Today</h2>
-            <p class="lead">Don't wait to protect your rights. Every day you delay could hurt your case. Call McGuire Law now for your free consultation, and find out how we can help protect your freedom, your family, and your future.</p>
+            <h2>Get Started Today</h2>
+            <p class="lead">Don't wait to protect your rights. Every day you delay could hurt your case. Call McGuire Law now and find out how we can help protect your freedom, your family, and your future.</p>
 
             <div class="contact-grid">
                 <div class="contact-item">
@@ -731,16 +729,27 @@
                 </div>
 
                 <div class="contact-item">
-                    <div class="contact-icon">📧</div>
-                    <h4>Email</h4>
-                    <p>info@mcguirelawsc.com</p>
+                    <div class="contact-icon">🏢</div>
+                    <h4>Columbia Office</h4>
+                    <p>2001 Assembly Street, Suite 102-B<br>Columbia, SC 29201</p>
                 </div>
 
                 <div class="contact-item">
                     <div class="contact-icon">🏢</div>
-                    <h4>Main Office</h4>
-                    <p>Columbia, SC</p>
-                    <p>Serving all of South Carolina</p>
+                    <h4>Charleston Office</h4>
+                    <p>460 King Street, Suite 200<br>Charleston, SC 29403</p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">🏢</div>
+                    <h4>Myrtle Beach Office</h4>
+                    <p>6514 Dick Pond Road<br>Myrtle Beach, SC 29588</p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">🏢</div>
+                    <h4>Spartanburg Office</h4>
+                    <p>518 East Main Street<br>Spartanburg, SC 29302</p>
                 </div>
 
                 <div class="contact-item">
@@ -760,6 +769,19 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer style="background: #b31942; color: #ffffff; padding: 40px 0; text-align: center;">
+        <div class="container">
+            <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 20px;">
+                <img src="/src/assets/mcguire-law-logo.jpg" alt="McGuire Law Logo" style="height: 60px; filter: brightness(0) invert(1); margin-right: 20px;" />
+                <div>
+                    <h3 style="color: #ffffff; margin: 0; font-size: 1.5em;">McGuire Law, LLC</h3>
+                    <p style="margin: 5px 0 0 0; font-size: 1em;">© 2025 McGuire Law, LLC. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script>
         // Phone click tracking
