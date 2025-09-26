@@ -17,7 +17,8 @@
       "WebFetch(domain:mcguirelaw.vercel.app)",
       "WebFetch(domain:help.proprofschat.com)",
       "WebFetch(domain:www.mcguirelawsc.com)",
-      "WebFetch(domain:mcguirelawsc.com)"
+      "WebFetch(domain:mcguirelawsc.com)",
+      "WebSearch"
     ],
     "deny": [],
     "ask": []
