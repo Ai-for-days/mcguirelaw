@@ -414,8 +414,46 @@
             margin-bottom: 20px;
         }
 
+        /* Responsive Images */
+        .matt-props2-responsive {
+            height: 250px;
+            max-width: 600px;
+        }
+
+        .office-card-logo {
+            height: 45px;
+            margin: 0 0 5px 0;
+        }
+
+        .google3-desktop {
+            height: 150px;
+        }
+
+        .thirty-years-desktop {
+            height: 200px;
+            max-width: 600px;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
+            .matt-props2-responsive {
+                height: 200px;
+                max-width: 500px;
+            }
+
+            .office-card-logo {
+                height: 15px;
+                margin: 0 0 5px 0;
+            }
+
+            .google3-desktop {
+                height: 100px;
+            }
+
+            .thirty-years-desktop {
+                height: 150px;
+                max-width: 400px;
+            }
             .hero h1 {
                 font-size: 2.5em;
             }
@@ -539,9 +577,6 @@
                 <div class="emergency-text">
                     24/7 Legal Help - Call: <a href="tel:8884995738" class="emergency-phone">888-499-5738</a>
                 </div>
-                <div style="text-align: center; margin: 10px 0;">
-                    <img src="/google8.png" alt="Google Reviews" style="height: 40px;" />
-                </div>
             </div>
         </div>
     </header>
@@ -549,9 +584,6 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <div style="text-align: center; margin: 30px 0;">
-                <img src="/no-back-fotor-ai-2025092714715.png" alt="McGuire Law" style="height: 200px; max-width: 600px;" />
-            </div>
             <div style="text-align: center; margin: 30px 0;">
                 <img src="/fotor-ai-2025092714343.png" alt="McGuire Law" style="height: 250px; max-width: 800px;" />
             </div>
@@ -561,6 +593,7 @@
 
             <div class="cta-buttons">
                 <a href="tel:8884995738" class="btn-primary">Call Now</a>
+                <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0HxYWpoHy_5xI7B7hKF6hXy7tj5n_HdPLnq82ouxkN0VYp0RPZ2lbYqc7B6bwMGz51LLXNNuY-" target="_blank" class="btn-primary" style="background: #002868;">Book a Call</a>
             </div>
         </div>
     </section>
@@ -569,6 +602,13 @@
     <section style="background: #f1f1f1; padding: 60px 0; text-align: center;">
         <div class="container">
             <img src="/matt props3.avif" alt="Matt McGuire - McGuire Law Attorney" style="height: 200px; max-width: 500px;" />
+        </div>
+    </section>
+
+    <!-- Google Reviews Image -->
+    <section style="background: #f1f1f1; padding: 40px 0; text-align: center;">
+        <div class="container">
+            <img src="/google10.png" alt="Google Reviews" style="height: 100px;" />
         </div>
     </section>
 
@@ -599,9 +639,6 @@
 
             <div class="card-grid">
                 <div class="card">
-                    <div style="text-align: center; margin: 0 0 20px 0;">
-                        <img src="/google10.png" alt="Google Reviews" style="height: 60px;" />
-                    </div>
                     <h3>Available 24/7 - Not Your Typical TV Law Firm</h3>
                     <p>When legal trouble strikes, it doesn't wait for business hours. Whether it's a weekend arrest, a late-night accident, or an urgent family law matter, we respond when you need us most.</p>
                 </div>
@@ -623,9 +660,6 @@
     <!-- Criminal Defense Section -->
     <section class="section section-gray">
         <div class="container">
-            <div style="text-align: center; margin: 0 0 40px 0;">
-                <img src="/matt-props1.avif" alt="Matt McGuire - Criminal Defense Attorney" style="height: 200px; max-width: 500px;" />
-            </div>
             <h2>Criminal Defense: Protecting Your Freedom and Future</h2>
             <p class="lead">Facing criminal charges can destroy everything you've worked for. Your job, your reputation, your freedom – it's all at risk.</p>
 
@@ -679,12 +713,16 @@
         </div>
     </section>
 
+    <!-- Google Reviews Image -->
+    <section style="background: #ffffff; padding: 40px 0; text-align: center;">
+        <div class="container">
+            <img src="/google2.png" alt="Google Reviews" style="height: 120px;" />
+        </div>
+    </section>
+
     <!-- Personal Injury Section -->
     <section class="section section-blue">
         <div class="container">
-            <div style="text-align: center; margin: 0 0 40px 0;">
-                <img src="/google2.png" alt="Google Reviews" style="height: 120px;" />
-            </div>
             <h2>Personal Injury: Fighting for Maximum Compensation</h2>
             <p class="lead">When someone else's negligence leaves you injured, insurance companies immediately start working to minimize their payout. From the moment you call us, we start fighting to maximize yours.</p>
 
@@ -742,7 +780,7 @@
     <section class="section section-pattern">
         <div class="container">
             <div style="text-align: center; margin: 0 0 40px 0;">
-                <img src="/matt-props2.avif" alt="Matt McGuire - Family Law Attorney" style="height: 200px; max-width: 500px;" />
+                <img src="/matt-props2.avif" alt="Matt McGuire - Family Law Attorney" class="matt-props2-responsive" />
             </div>
             <h2>Family Law: Protecting What Matters Most</h2>
             <p class="lead">Family law matters are deeply personal and emotionally charged. Whether you're going through a divorce, fighting for custody, or dealing with other family legal issues, we provide both skilled legal representation and compassionate support.</p>
@@ -786,37 +824,34 @@
     <!-- Final CTA Section -->
     <section class="section section-blue" id="contact">
         <div class="container">
-            <div style="text-align: center; margin: 0 0 40px 0;">
-                <img src="/no-back-fotor-ai-2025092714715.png" alt="McGuire Law" style="height: 200px; max-width: 600px;" />
-            </div>
             <h2>Get Started Today</h2>
             <p class="lead">Don't wait to protect your rights. Every day you delay could hurt your case. Call McGuire Law now and find out how we can help protect your freedom, your family, and your future.</p>
 
             <div class="contact-grid">
 
                 <div class="contact-item">
-                    <img src="/gemini-generated-image-1.png" alt="McGuire Law" style="height: 30px; margin: 0 0 5px 0;" />
+                    <img src="/gemini-generated-image-1.png" alt="McGuire Law" class="office-card-logo" />
                     <h4 style="color: #e7c70d;">Columbia Office</h4>
                     <p>2001 Assembly Street, Suite 102-B<br>Columbia, SC 29201</p>
                     <p style="color: #e7c70d; font-weight: bold;">(888) 499-5738</p>
                 </div>
 
                 <div class="contact-item">
-                    <img src="/gemini-generated-image-1.png" alt="McGuire Law" style="height: 30px; margin: 0 0 5px 0;" />
+                    <img src="/gemini-generated-image-1.png" alt="McGuire Law" class="office-card-logo" />
                     <h4 style="color: #e7c70d;">Charleston Office</h4>
                     <p>460 King Street, Suite 200<br>Charleston, SC 29403</p>
                     <p style="color: #e7c70d; font-weight: bold;">(888) 499-5738</p>
                 </div>
 
                 <div class="contact-item">
-                    <img src="/gemini-generated-image-1.png" alt="McGuire Law" style="height: 30px; margin: 0 0 5px 0;" />
+                    <img src="/gemini-generated-image-1.png" alt="McGuire Law" class="office-card-logo" />
                     <h4 style="color: #e7c70d;">Myrtle Beach Office</h4>
                     <p>6514 Dick Pond Road<br>Myrtle Beach, SC 29588</p>
                     <p style="color: #e7c70d; font-weight: bold;">(888) 499-5738</p>
                 </div>
 
                 <div class="contact-item">
-                    <img src="/gemini-generated-image-1.png" alt="McGuire Law" style="height: 30px; margin: 0 0 5px 0;" />
+                    <img src="/gemini-generated-image-1.png" alt="McGuire Law" class="office-card-logo" />
                     <h4 style="color: #e7c70d;">Spartanburg Office</h4>
                     <p>518 East Main Street<br>Spartanburg, SC 29302</p>
                     <p style="color: #e7c70d; font-weight: bold;">(888) 499-5738</p>
@@ -825,7 +860,7 @@
             </div>
 
             <div style="text-align: center; margin: 40px 0;">
-                <img src="/google3.png" alt="Google Reviews" style="height: 100px;" />
+                <img src="/google3.png" alt="Google Reviews" class="google3-desktop" />
             </div>
 
             <div class="callout">
@@ -842,7 +877,7 @@
     <!-- 30 Years Experience Image -->
     <section style="background: #f1f1f1; padding: 60px 0; text-align: center;">
         <div class="container">
-            <img src="/30-years.avif" alt="30 Years of Legal Experience" style="height: 150px; max-width: 400px;" />
+            <img src="/30-years.avif" alt="30 Years of Legal Experience" class="thirty-years-desktop" />
         </div>
     </section>
 
