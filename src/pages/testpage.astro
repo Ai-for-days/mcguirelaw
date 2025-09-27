@@ -98,11 +98,12 @@
 
         .header-content {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
             align-items: center;
             width: 100%;
             max-width: 100%;
             overflow: hidden;
+            gap: 10px;
         }
 
         .logo img {
@@ -450,6 +451,10 @@
             height: 180px;
         }
 
+        .header-google16 {
+            height: 60px;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .matt-props2-responsive {
@@ -485,6 +490,10 @@
 
             .footer-google15 {
                 height: 60px;
+            }
+
+            .header-google16 {
+                height: 20px;
             }
             .hero h1 {
                 font-size: 2.5em;
@@ -609,8 +618,8 @@
                 <div class="emergency-text">
                     24/7 Legal Help - Call: <a href="tel:8884995738" class="emergency-phone">888-499-5738</a>
                 </div>
-                <div style="text-align: center; margin: 10px 0;">
-                    <img src="/no-back-google16.png" alt="Google Reviews" style="height: 40px;" />
+                <div style="text-align: center;">
+                    <img src="/no-back-google16.png" alt="Google Reviews" class="header-google16" />
                 </div>
             </div>
         </div>
@@ -643,7 +652,7 @@
     <!-- Google Reviews Image -->
     <section style="background: #f1f1f1; text-align: center;" class="google10-section">
         <div class="container">
-            <img src="/google2.png" alt="Google Reviews" class="google10-responsive" />
+            <img src="/cropped-google2.jpg" alt="Google Reviews" class="google10-responsive" />
         </div>
     </section>
 
@@ -751,7 +760,7 @@
     <!-- Google Reviews Image -->
     <section style="background: #ffffff; padding: 40px 0; text-align: center;">
         <div class="container">
-            <img src="/google2.png" alt="Google Reviews" class="google2-responsive" />
+            <img src="/cropped-google2.jpg" alt="Google Reviews" class="google2-responsive" />
         </div>
     </section>
 
@@ -837,7 +846,7 @@
     <!-- Google Reviews Image -->
     <section style="background: #ffffff; padding: 40px 0; text-align: center;">
         <div class="container">
-            <img src="/google3.png" alt="Google Reviews" class="google3-desktop" />
+            <img src="/cropped-google3.jpg" alt="Google Reviews" class="google3-desktop" />
         </div>
     </section>
 
