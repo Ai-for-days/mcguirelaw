@@ -448,16 +448,32 @@
             box-sizing: border-box;
         }
 
-        body {
+        html {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        html, body {
             font-family: 'Georgia', serif;
             line-height: 1.6;
             color: #0a3161;
+            overflow-x: hidden;
+            max-width: 100%;
+            position: relative;
+        }
+
+        .hero, .section {
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100%;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         /* Header Section */
@@ -712,6 +728,7 @@
         @media (max-width: 768px) {
             .hero h1 {
                 font-size: 2.2em;
+                word-wrap: break-word;
             }
 
             .cta-buttons {
@@ -726,6 +743,66 @@
 
             .trust-items {
                 flex-direction: column;
+            }
+
+            .container {
+                padding: 0 15px;
+                max-width: 100%;
+                overflow: hidden;
+            }
+
+            img {
+                max-width: 100% !important;
+                height: auto !important;
+            }
+
+            .practice-areas {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .location-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 10px;
+                max-width: 100%;
+            }
+
+            .hero {
+                padding: 40px 0;
+            }
+
+            .hero h1 {
+                font-size: 1.8em;
+                word-wrap: break-word;
+            }
+
+            .btn-primary, .btn-secondary {
+                padding: 15px 25px;
+                font-size: 1.1em;
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .practice-card, .testimonial {
+                padding: 20px;
+            }
+
+            .section {
+                padding: 40px 0;
+            }
+
+            h2 {
+                font-size: 2.2em;
+            }
+
+            .trust-number {
+                font-size: 2em;
             }
         }
     </style>
