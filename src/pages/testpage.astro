@@ -512,7 +512,7 @@
             }
 
             .header-google16 {
-                height: 25px;
+                height: 20px;
             }
             .hero h1 {
                 font-size: 2.5em;
@@ -555,11 +555,13 @@
             }
 
             .emergency-text {
-                font-size: 0.8em;
+                font-size: 0.7em;
                 white-space: nowrap;
                 text-align: center;
                 line-height: 1.2;
                 overflow: visible;
+                flex: 1;
+                min-width: 0;
             }
 
             .container {
@@ -618,6 +620,28 @@
 
             .header-google16 {
                 height: 22px;
+            }
+        }
+
+        /* Portrait Orientation for mobile devices */
+        @media screen and (max-width: 480px) and (orientation: portrait) {
+            .header-content {
+                gap: 3px;
+                padding: 0 5px;
+            }
+
+            .emergency-text {
+                font-size: 0.65em;
+                flex: 1;
+                min-width: 0;
+            }
+
+            .header-google16 {
+                height: 18px;
+            }
+
+            .container {
+                padding: 0 10px;
             }
         }
 
