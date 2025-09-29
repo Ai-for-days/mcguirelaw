@@ -104,6 +104,7 @@
             overflow: hidden;
         }
 
+        /* Desktop: Single row layout */
         .header-content {
             display: flex;
             flex-direction: row;
@@ -512,7 +513,7 @@
             }
 
             .header-google16 {
-                height: 20px;
+                height: 40px;
             }
             .hero h1 {
                 font-size: 2.5em;
@@ -550,18 +551,17 @@
             }
 
             .header-content {
-                flex-direction: row;
-                gap: 5px;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
             }
 
             .emergency-text {
-                font-size: 0.7em;
-                white-space: nowrap;
+                font-size: 1.0em;
+                white-space: normal;
                 text-align: center;
-                line-height: 1.2;
+                line-height: 1.4;
                 overflow: visible;
-                flex: 1;
-                min-width: 0;
             }
 
             .container {
@@ -604,46 +604,6 @@
             }
         }
 
-        /* General Landscape Orientation for mobile devices */
-        @media screen and (max-width: 768px) and (orientation: landscape) {
-            .header {
-                padding: 8px 0;
-            }
-
-            .header-content {
-                gap: 5px;
-            }
-
-            .emergency-text {
-                font-size: 0.8em;
-            }
-
-            .header-google16 {
-                height: 22px;
-            }
-        }
-
-        /* Portrait Orientation for mobile devices */
-        @media screen and (max-width: 480px) and (orientation: portrait) {
-            .header-content {
-                gap: 3px;
-                padding: 0 5px;
-            }
-
-            .emergency-text {
-                font-size: 0.65em;
-                flex: 1;
-                min-width: 0;
-            }
-
-            .header-google16 {
-                height: 18px;
-            }
-
-            .container {
-                padding: 0 10px;
-            }
-        }
 
         @media (max-width: 480px) {
             .container {
