@@ -582,6 +582,45 @@
             }
         }
 
+        /* Mobile Landscape Orientation */
+        @media screen and (max-height: 500px) and (orientation: landscape) {
+            .header {
+                padding: 5px 0;
+            }
+
+            .header-content {
+                gap: 3px;
+            }
+
+            .emergency-text {
+                font-size: 0.7em;
+                line-height: 1.1;
+            }
+
+            .header-google16 {
+                height: 20px;
+            }
+        }
+
+        /* General Landscape Orientation for mobile devices */
+        @media screen and (max-width: 768px) and (orientation: landscape) {
+            .header {
+                padding: 8px 0;
+            }
+
+            .header-content {
+                gap: 5px;
+            }
+
+            .emergency-text {
+                font-size: 0.8em;
+            }
+
+            .header-google16 {
+                height: 22px;
+            }
+        }
+
         @media (max-width: 480px) {
             .container {
                 padding: 0 10px;
