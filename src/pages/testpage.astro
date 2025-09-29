@@ -106,12 +106,13 @@
 
         .header-content {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
+            justify-content: space-between;
             width: 100%;
             max-width: 100%;
             overflow: hidden;
-            gap: 10px;
+            gap: 20px;
         }
 
         .logo img {
@@ -124,7 +125,7 @@
             font-weight: bold;
             color: #002868;
             text-align: center;
-            flex-grow: 1;
+            flex: 1;
             overflow: hidden;
             white-space: nowrap;
         }
@@ -636,7 +637,7 @@
                 <div class="emergency-text">
                     24/7 Legal Help
                 </div>
-                <div style="text-align: center;">
+                <div style="text-align: center; flex-shrink: 0;">
                     <img src="/no-back-google16-new.png" alt="Google Reviews" class="header-google16" />
                 </div>
                 <div class="emergency-text">
