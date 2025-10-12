@@ -18,7 +18,9 @@
       "WebFetch(domain:help.proprofschat.com)",
       "WebFetch(domain:www.mcguirelawsc.com)",
       "WebFetch(domain:mcguirelawsc.com)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(git revert:*)",
+      "Bash(npm i:*)"
     ],
     "deny": [],
     "ask": []
